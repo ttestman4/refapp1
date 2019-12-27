@@ -12,3 +12,10 @@ git checkout master
 git merge upstream/master
 
 
+
+
+Angular
+\sampleapp1\src\app\
+ng generate component cf-list
+ng g c cf-details
+ng g c page-not-found

@@ -1,0 +1,9 @@
+<h2>Cash Flows</h2>
+<ul class="cfs">
+  <li *ngFor="let cf of cfs$ | async"
+    [class.selected]="cf.id === selectedId">
+     <a [routerLink]="['/cf', cf.id]">
+      <span class="badge">{{ cf.id }}</span>{{ cf.name }}
+    </a>
+  </li>
+</ul>

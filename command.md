@@ -19,3 +19,6 @@ Angular
 ng generate component cf-list
 ng g c cf-details
 ng g c page-not-found
+
+ng generate module cfs/cfs --module app --flat --routing
+ng g c cf-detail

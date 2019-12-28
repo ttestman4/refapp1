@@ -1,21 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }    from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CfListComponent } from './cf-list/cf-list.component';
-import { CfDetailsComponent } from './cf-details/cf-details.component';
+import { AppRoutingModule } from './app-routing.module';
+import { CfsModule } from './cfs/cfs.module';
+
+//import { CfListComponent } from './cf-list/cf-list.component';
+//import { CfDetailsComponent } from './cf-details/cf-details.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CfListComponent,
-    CfDetailsComponent,
+    //CfListComponent,
+    //CfDetailsComponent,
     PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    CfsModule,
     AppRoutingModule
   ],
   providers: [],

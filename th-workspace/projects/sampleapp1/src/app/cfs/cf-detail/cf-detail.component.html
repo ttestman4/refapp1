@@ -1,0 +1,11 @@
+<h2>CASH FLOWS</h2>
+<div *ngIf="cf$ | async as cf">
+  <h3>"{{ cf.name }}"</h3>
+  <div>
+    <label>Id: </label>{{ cf.id }}</div>
+  <div>
+    <label>Name: </label>
+    <input [(ngModel)]="cf.name" placeholder="name"/>
+  </div>
+  
+</div>
